@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar1"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangular1"
+            android:layout_margin="6dp"
+            android:orientation="vertical"
+            android:padding="12dp">
+            <TextView
+                android:id="@+id/head1"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:gravity="center_vertical"
+                android:text="Application For Rest House Booking"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub1"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/head1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="Request For Rest House Booking In:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ans1"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/head1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="ORH - RDSO"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub2"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/head1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="Request For Rest House Booking In:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ans2"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/head1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="RDSO Officer"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub3"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/head1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="Request For Rest House Booking In:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ans3"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/head1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="Officer A/C - Officer on official duty"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/sub4"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_below="@id/head1"
+                android:gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:text="Rest House Requested:"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sub41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="From Date:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ans41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_toRightOf="@id/sub41"
+                    android:gravity="center_vertical"
+                    android:text="13-06-2017"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ans42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="12dp"
+                    android:text="7:00"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sub42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_toLeftOf="@id/ans42"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="TIme:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sub51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/ans41"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="To Date:"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ans51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ans41"
+                    android:layout_toRightOf="@id/sub41"
+                    android:gravity="center_vertical"
+                    android:text="14-06-2017"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ans52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/ans41"
+                    android:gravity="center_vertical"
+                    android:paddingEnd="12dp"
+                    android:text="18:00"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sub52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_below="@id/ans41"
+                    android:layout_toLeftOf="@id/ans52"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="TIme:"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangular1"
+                android:orientation="vertical"
+                android:layout_margin="6dp"
+                android:padding="12dp">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:text="  OFFICER'S PARTICULAR"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="NAME OF OFFICIAL:"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="DHEERAJ SRIVASTAVA"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="OFFICIAL DESIGNATION:"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="SA"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="OFFICIAL MOBILE NO. :"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="8564845549"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="DTE./ORG. WHERE POSTED :"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="CARRIAGE:"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="EMAIL:"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="KAUSHAL945@GMAIL.COM"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="NO. OF PERSON :"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="2"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="ROOM BOOKED FOR :"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="SELF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rectangular1"
+                android:layout_margin="6dp"
+                android:padding="12dp">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:text="  OTHER SPECIFICATION"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="FULL SUIT/SINGLE BED:"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="SINGLE BED"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="NDLS RAIL NIWAS/NDLS RLY STASION:"
+                    android:textSize="16sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="24dp"
+                    android:text="VIP REST HOUSE/ORH RDSO:"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
